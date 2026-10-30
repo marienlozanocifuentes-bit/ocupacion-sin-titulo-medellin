@@ -357,7 +357,7 @@ ocupantes está desempleado o trabaja en la informalidad (26 de 33), frente al
 diferencia viene sobre todo de la informalidad: el 72,8 % de los jefes
 ocupantes que trabajan no cotiza a pensión (19 de 26), frente al 48,8 % de los
 arrendatarios (623 de 1.284). El desempleo es más parecido entre los dos grupos
-(21,2 % y 16,1 %) y en los ocupantes descansa en solo siete jefes. Los dos
+(21,2 %, 7 de 33, y 16,1 %, 244 de 1.528) y en los ocupantes descansa en solo siete jefes. Los dos
 grupos, sin embargo, no son del todo comparables en ingreso: el gasto mensual
 mediano de los hogares ocupantes es de 605.000 pesos, frente a 866.000 pesos
 de los arrendatarios, y por persona es de 225.000 frente a 300.000 pesos.[^gasto]
@@ -384,8 +384,8 @@ entre paréntesis, el conteo de jefes de la muestra. Ingreso en pesos de 2025.*
 **La GEIH muestra la misma dirección para H2.** Con los doce meses de 2025, el
 53,0 % de los jefes ocupantes en la fuerza laboral está desempleado o es
 informal (22 de 43), frente al 39,7 % de los arrendatarios (1.795 de 4.343),
-una diferencia de 13,3 puntos que, de nuevo, viene de la informalidad (52,0 %
-frente a 37,1 %). El desempleo vuelve a no mostrar un patrón: en la GEIH es
+una diferencia de 13,3 puntos que, de nuevo, viene de la informalidad (52,0 %, 21
+de 42, frente a 37,1 %, 1.600 de 4.148). El desempleo vuelve a no mostrar un patrón: en la GEIH es
 menor entre los ocupantes, con un solo jefe desempleado. El ingreso laboral
 mediano de los jefes ocupados también es menor entre los ocupantes (1.400.000
 frente a 1.624.000 pesos), lo que refuerza la cautela sobre el ingreso. Los
@@ -402,6 +402,40 @@ pequeñas. Frente al árbol de decisión de la sección 1, la combinación que
 aparece es la segunda: se cumple H2 pero no H1, lo que apunta a un problema
 principalmente de ingresos laborales que afecta también a hogares no
 desplazados.
+
+# Implicación de política
+
+Según el árbol de decisión de la sección 1, la combinación que apareció (se
+cumple H2 pero no H1) apunta a un problema principalmente de ingresos
+laborales: los hogares que ocupan sin título no se distinguen por haber llegado
+desplazados, sino porque sus jefes trabajan con más frecuencia en la
+informalidad. Si esto es así, una política centrada solo en atender el
+desplazamiento o en legalizar los predios llegaría tarde, porque dejaría intacta
+la restricción que impide arrendar o comprar: un ingreso estable y demostrable.
+El instrumento que señala el resultado es la inclusión laboral y la
+formalización de los jefes de hogar de estratos 1 a 3.
+
+En Medellín, quien decidiría distinto mañana si este resultado se confirma es,
+en primer lugar, la Secretaría de Desarrollo Económico, responsable de los
+programas de empleo y emprendimiento del distrito, cuya oferta se concentra en
+los Centros de Emprendimiento y Empleo y que podría focalizar parte de ella en
+los barrios con más hogares ocupantes. En segundo lugar, el Instituto Social de
+Vivienda y Hábitat de Medellín (ISVIMED), que define a quién llegan los
+subsidios de vivienda. El subsidio de vivienda nueva exige ingresos del hogar de
+hasta 4 SMMLV, un aporte propio en ahorro programado o cesantías inmovilizadas,
+seis años o más viviendo en Medellín y no ser propietario ni poseedor de
+vivienda [@isvimed2023]. El primer requisito no excluye a los hogares
+ocupantes, que gastan menos que los arrendatarios; los otros dos sí pueden
+hacerlo: las cesantías solo las acumula quien trabaja con contrato, que es
+justamente lo que les falta a la mayoría de estos jefes de hogar, y un ocupante
+de hecho podría contar como poseedor. La otra vía, la titulación de predios,
+exige demostrar al menos diez años de ocupación continua [@isvimed2023], de
+modo que tampoco llega a las ocupaciones recientes.
+
+Para que un resultado basado en 74 hogares sirva para tomar esas decisiones
+haría falta repetir la comparación con varios años de la ECV y contar con una
+medida de ingreso del hogar que permita separar el papel del ingreso del de la
+informalidad.
 
 # Declaración de uso de inteligencia artificial {.unnumbered}
 
@@ -423,7 +457,9 @@ datos y metodología»). En la sección 4, en el código, le pedimos organizar l
 doce meses de la GEIH «y sacar solo lo necesario de cada mes solo para la ciudad
 de Medellín», pasar la limpieza de la ECV a R y calcular los resultados («arranca
 con los 3 en ese orden»); la herramienta escribió los cuatro scripts de
-`codigo/` y la primera versión de los párrafos de resultados.
+`codigo/` y la primera versión de los párrafos de resultados. En la sección 5
+le pedimos un primer borrador a partir del árbol de decisión de la sección 1 y
+del resultado de la sección 4.
 
 **Lo que devolvió y no usamos.** Propuso comparar a los ocupantes con hogares no
 desplazados y no lo usamos, porque perdía la decisión entre ocupar y arrendar.
@@ -439,12 +475,20 @@ como desempleado a todo jefe sin trabajo, aunque no buscara empleo; se corrigió
 agregando la pregunta H.43 al comparar el código con la definición de la
 sección 3. En la sección 2 escribió una clave de cita que no
 existía en el archivo de referencias; lo vimos al revisar las claves de cita
-antes de compilar.
+antes de compilar. En la sección 5 afirmó que los subsidios del ISVIMED podían
+exigir ingresos formales y que los hogares ocupantes tenían ingresos parecidos a
+los de los arrendatarios; lo primero no aparece en los requisitos oficiales y lo
+segundo contradice la sección 4. Lo vimos al revisar la página de la Alcaldía y
+reescribimos el párrafo con los requisitos publicados. En la sección 4 dejó dos
+pares de porcentajes sin su conteo, que agregamos al revisar el texto.
 
 **Lo que verificamos a mano.** El 74 y el 2.565 los comprobó Samuel Rodríguez
 corriendo `codigo/01_filtro_ecv.R` en su computador el 29 de octubre de 2026;
 las referencias, abriendo cada DOI o URL el 29 de octubre de 2026, por Marien Lozano. La tabla de
 frecuencias de J.36 la revisamos contra las preguntas de pago del cuestionario.
+Las funciones del ISVIMED y de la Secretaría de Desarrollo Económico que se
+mencionan en la sección 5 las comprobamos en las páginas oficiales de la
+Alcaldía de Medellín el 29 de octubre de 2026.
 
 **Quién leyó el texto final.** Sofia Cambas leyó el documento completo antes de
 subirlo, el 29 de octubre de 2026.
