@@ -1,0 +1,302 @@
+---
+title: "¿Desplazamiento o informalidad laboral? Qué distingue a los hogares que ocupan su vivienda sin título de los que la arriendan en Medellín"
+subtitle: "Grupo 2 · Repositorio: <https://github.com/marienlozanocifuentes-bit/ocupacion-sin-titulo-medellin>"
+author:
+  - Sofia Cambas
+  - Marien Lozano
+  - Samuel Rodríguez
+date: today
+date-format: "D [de] MMMM [de] YYYY"
+lang: es
+keywords: [asentamientos informales, desplazamiento forzado, tenencia de vivienda, informalidad laboral, Medellín]
+bibliography: referencias.bib
+csl: apa.csl
+execute:
+  echo: false
+  warning: false
+  message: false
+format:
+  pdf:
+    documentclass: article
+    papersize: letter
+    fontsize: 12pt
+    linestretch: 1.5
+    geometry: margin=2.54cm
+    number-sections: true
+    colorlinks: true
+---
+
+# Planteamiento del problema
+
+Con datos del Censo de 2018, el 7,16 % de la población de Medellín vivía en
+viviendas inadecuadas, asentamientos informales o barrios marginales, frente al
+11,4 % del conjunto de las 68 ciudades analizadas [@dane2021, diaps. 10-11]. El
+indicador, sin embargo, se construyó con solo cinco de sus siete dimensiones,
+porque el censo no pregunta si los hogares tienen título sobre la vivienda que
+ocupan [@dane2021, diap. 12]. Medida por territorio, la magnitud es mayor: hasta
+hace cerca de una década, los asentamientos precarios ocupaban el 22,9 % del
+suelo urbano de la ciudad [@zuleta2024].[^dato]
+
+[^dato]: La cifra de prensa presenta una inconsistencia. El Plan de Ordenamiento
+Territorial de Medellín define 11.160,98 ha de suelo urbano [@pot2014, art. 11,
+p. 18]; el 22,92 % de esa área equivale a unas 2.558 ha, no a las más de
+9.000 ha que reporta el artículo.
+
+El fenómeno nace del crecimiento acelerado de la ciudad en la segunda mitad del
+siglo XX, impulsado por la llegada de población rural, que superó la capacidad
+del Estado y del mercado formal de vivienda [@martinez2014; @velasquez2013].
+Muchas familias construyeron sin permiso ni título, en lo que se conoce como
+"invasiones"; en el barrio Lenin (1969-1975), por ejemplo, un grupo de familias
+se organizó para tomar un terreno en lugar de comprar o arrendar
+[@martinez2014].
+
+Desde la economía, esa decisión es una elección entre ocupar, arrendar o
+comprar. Comprar exige ahorro o crédito, y arrendar, un ingreso mensual estable;
+ocupar no exige pagos iniciales, a cambio de vivir sin título y en condiciones
+precarias. @velasquez2013 identifica la pobreza, el desempleo, la informalidad
+laboral y el desplazamiento forzado como el trasfondo de la ocupación irregular
+en Medellín, y en la revisión de 26 estudios de @sierra2019 la situación laboral
+es la dimensión más estudiada de la población desplazada en Colombia (76,9 % de
+los estudios). Juntas sugieren una cadena: el desplazamiento trae a la ciudad
+hogares sin empleo formal, sin ingreso estable no pueden arrendar ni comprar, y
+ocupar se vuelve la alternativa disponible. Ninguna de las dos compara, a nivel
+de hogar, a quienes ocupan sin título con quienes, en condiciones de ingreso
+similares, arriendan. Saber si la ocupación responde al desplazamiento, al
+empleo o a ambos ayuda a elegir entre legalizar, subsidiar el arriendo o apoyar
+el empleo.
+
+## Pregunta de investigación
+
+La pregunta inicial del proyecto, fijada el 31 de julio de 2026, fue:
+*«¿Qué características socioeconómicas distinguen a los hogares en asentamientos
+irregulares de los que no lo están, en Medellín?»* A partir de ella, este trabajo
+formula una pregunta comparativa:
+
+**¿En qué se diferencian, en su condición de desplazamiento forzado y su
+situación laboral, los hogares de Medellín que ocupan su vivienda sin título de
+propiedad frente a los hogares de estratos 1 a 3 que la arriendan?**
+
+Los ocupantes sin título son el grupo que eligió "invadir", y los arrendatarios
+de estratos 1 a 3, el que, con ingresos parecidos, eligió "arrendar". Ocupar sin
+título es una aproximación a vivir en un asentamiento irregular, no un
+sinónimo, y el estrato clasifica la vivienda, no el ingreso del hogar.
+
+## Objetivos
+
+**Objetivo general.** Identificar qué factores económicos, en particular el
+desplazamiento forzado y la situación laboral, diferencian a los hogares de
+Medellín que ocupan su vivienda sin título de los hogares de estratos 1 a 3 que
+la arriendan.
+
+**Objetivos específicos.** (1) Sintetizar la literatura sobre por qué llegan los
+hogares a la ciudad, por qué no pueden pagar vivienda formal y qué ha hecho el
+Estado con los asentamientos. (2) Construir con la ECV y la GEIH de 2025 una base
+de hogares que compare a los dos grupos. (3) Compararlos según desplazamiento,
+situación laboral e ingreso. (4) Derivar qué instrumento de política responde
+mejor a las diferencias encontradas.
+
+## Hipótesis
+
+Frente a los arrendatarios de estratos 1 a 3, los hogares que ocupan su vivienda
+sin título presentan una mayor proporción de hogares desplazados (H1) y de jefes
+de hogar desempleados o en empleo informal (H2). Si se cumple H1 pero no H2, el
+desplazamiento explicaría la ocupación por una vía distinta al empleo, como la
+urgencia de la llegada o la falta de redes. Si se cumple H2 pero no H1, el
+problema sería principalmente de ingresos y afectaría también a hogares no
+desplazados. Cada combinación apunta a una política distinta.
+
+# Revisión de literatura
+
+**Por qué llegan.** Desde la década de 1950, Medellín creció más rápido de lo que
+la planeación formal podía absorber, en buena parte mediante invasiones y
+urbanizaciones piratas en las laderas y la periferia [@kamalipour2023;
+@martinez2014], y el conflicto armado aceleró el proceso: parte de las viviendas
+informales fue construida por población desplazada desde zonas rurales
+[@dorner2019]. En Pinares de Oriente, cerca del 80 % de los habitantes eran
+víctimas de desplazamiento y la ocupación del terreno la lideró un miembro de un
+grupo armado que asignaba los lotes [@smith2020]. Para muchos hogares, entonces,
+"invadir" no es una elección en un mercado libre, sino una opción condicionada
+por quien controla el acceso al suelo.
+
+**Por qué no pueden pagar.** En la población desplazada, el desempleo y el
+trabajo informal son la dimensión más documentada [@sierra2019], y en Medellín
+aparecen junto con la pobreza como el trasfondo de la ocupación irregular
+[@velasquez2013]. Estas restricciones también definen dónde vive el hogar: los
+asentamientos informales ocupan una proporción mucho mayor de las áreas
+expuestas a deslizamientos, porque los grupos con menos recursos tienen pocas
+alternativas al suelo de alto riesgo [@kuhnl2023]. La frontera entre ocupar y arrendar,
+además, no es nítida: dentro de los asentamientos, los hogares adaptan sus
+viviendas para arrendar cuartos [@kamalipour2023], de modo que parte de los
+arrendatarios de estratos bajos vive también en barrios de origen informal.
+
+**Qué hace el Estado.** La respuesta estatal pasó de la erradicación de los
+barrios a su legalización y, desde los años 2000, al urbanismo social de los
+Proyectos Urbanos Integrales [@velasquez2013; @schwab2018]. La evidencia económica más directa apunta a la oferta formal: con
+la calidad geológica del terreno como instrumento, @posada2024 encuentran que los
+nuevos proyectos de vivienda de interés social reducen la vivienda informal, la
+pobreza y el crimen en los barrios que los rodean, aunque algunos programas de
+mejoramiento elevaron el precio del suelo y expulsaron a parte de sus habitantes
+[@velasquez2013].
+
+**El vacío.** La evidencia económica trabaja a nivel de barrio; ningún trabajo
+revisado compara a nivel de hogar a quienes ocupan sin título con quienes, con
+ingresos similares, arriendan.
+
+# Datos y metodología
+
+Se usan dos encuestas de hogares de 2025. La Encuesta de Calidad de Vida de
+Medellín [ECV, @ecv2025] cubre el municipio con 6.955 hogares y es la única que
+pregunta si la persona llegó a la ciudad por razones de orden público. La Gran
+Encuesta Integrada de Hogares [GEIH, @geih2025], del DANE, cubre Medellín y su
+área metropolitana; sus doce meses suman 11.825 hogares y mide el mercado
+laboral con las definiciones oficiales. Como entrevistan a hogares distintos, no
+se unen: la ECV es la fuente principal y la GEIH comprueba los resultados
+laborales.
+
+La unidad de análisis es el hogar, y las características laborales son las del
+jefe. Con la pregunta de tenencia se conservan los hogares que ocupan de hecho,
+sin título, y los que pagan arriendo, y se restringe la muestra a los estratos
+1 a 3: quedan 74 ocupantes y 2.565 arrendatarios en la ECV, y 64 y 5.186 en la
+GEIH. En la GEIH se unieron, para cada mes, los cinco módulos con los
+identificadores de vivienda, hogar y persona, y luego los doce meses, dividiendo
+el factor de expansión por doce. Todo el procesamiento está en R, en la carpeta
+`codigo/` del repositorio.
+
+| Concepto | ECV 2025 | GEIH 2025 |
+|:---------|:---------|:----------|
+| Tenencia de la vivienda | J.36 | P5090 |
+| Estrato | A.10 | P4030S1A1 |
+| Desplazamiento | C.3: llegó por orden público | P3386: conflicto (últimos 12 meses) |
+| Ocupado o desempleado | H.31 y H.43 | OCI y FT |
+| Informalidad laboral | F.2: no cotiza a pensión | P6920: no cotiza a pensión |
+| Factor de expansión | FEH | FEX_C18 / 12 |
+
+: Variables usadas en cada encuesta {#tbl-variables}
+
+Un hogar es desplazado si al menos uno de sus miembros llegó a Medellín por
+razones de orden público. Un jefe es desempleado si no trabaja y busca empleo, e
+informal si trabaja y no cotiza a pensión. El análisis es descriptivo: para cada
+grupo se calculan el porcentaje de hogares desplazados (H1) y el de jefes
+desempleados o informales (H2), ponderados con el factor de expansión.
+
+Hay cuatro limitaciones. El grupo de ocupantes es pequeño, y en la GEIH varía de
+0 a 16 hogares por mes. Ninguna encuesta pregunta directamente por el
+desplazamiento forzado. El diccionario de la ECV no trae las etiquetas de la
+tenencia, que se verificaron con las preguntas de pago del cuestionario: los
+3.123 hogares de la categoría 1 pagan alquiler y ninguno de las categorías 3 a 6
+lo hace; la categoría 5, ocupante de hecho, agrupa 92 hogares. Y las diferencias
+entre grupos muestran asociaciones, no relaciones de causalidad: no dicen por
+qué cada familia tomó su decisión ni si la informalidad antecede a la ocupación
+o al revés.
+
+# Resultados
+
+```{r}
+library(readr)
+tabla_ecv  <- read_csv("datos/tabla_h1_h2.csv", show_col_types = FALSE)
+tabla_geih <- read_csv("datos/tabla_h2_geih.csv", show_col_types = FALSE)
+```
+
+```{r}
+#| label: tbl-resultados
+#| tbl-cap: "Desplazamiento, empleo y gasto de los hogares de estratos 1 a 3, ECV 2025"
+knitr::kable(tabla_ecv, align = c("l", "r", "r"))
+```
+
+*Fuente: ECV 2025, cálculos propios con `codigo/02_tabla_h1_h2.R`. Porcentajes
+ponderados; entre paréntesis, el conteo de la muestra. H2 y el desempleo se
+calculan sobre los jefes ocupados o desempleados, y la informalidad sobre los
+ocupados. Gasto en pesos de 2025.*
+
+**H1 no se cumple.** El 5,8 % de los hogares arrendatarios tiene al menos un
+miembro que llegó a Medellín por razones de orden público (148 de 2.565), frente
+al 1,4 % de los ocupantes, un solo hogar de 74. La cifra de los ocupantes es poco
+precisa, pero la dirección se mantiene al restringir la muestra a los estratos 1
+y 2, y coincide con otro dato: solo 13 de los 74 jefes ocupantes no han vivido
+siempre en Medellín, frente a 941 de los 2.565 arrendatarios. Quien llega hoy a
+la ciudad tiende a arrendar; los ocupantes actuales son sobre todo hogares que ya
+vivían en ella, quizás ligados a ocupaciones de décadas anteriores
+[@martinez2014].
+
+**H2 sí se cumple, por la informalidad.** El 78,5 % de los jefes ocupantes en la
+fuerza laboral está desempleado o es informal (26 de 33), frente al 57,0 % de los
+arrendatarios (867 de 1.528). La diferencia viene de la informalidad: no cotiza
+a pensión el 72,8 % de los jefes ocupantes que trabajan (19 de 26), frente al
+48,8 % de los arrendatarios (623 de 1.284); el desempleo es más parecido
+(21,2 %, 7 de 33, y 16,1 %, 244 de 1.528). Los dos grupos, sin embargo, no son
+iguales en ingreso: el gasto mensual mediano es de 605.000 pesos en los hogares
+ocupantes y de 866.000 en los arrendatarios.[^gasto] Parte de la diferencia en
+H2 puede ser, entonces, una diferencia de ingreso, y estos datos no permiten
+separar las dos explicaciones.
+
+[^gasto]: Se usa el gasto como aproximación al ingreso porque las preguntas de
+ingreso de la ECV mezclan montos mensuales y anuales que no se pueden sumar de
+forma confiable.
+
+```{r}
+#| label: tbl-geih
+#| tbl-cap: "Comprobación de H2 con la GEIH 2025, jefes de hogar de estratos 1 a 3"
+knitr::kable(tabla_geih, align = c("l", "r", "r"))
+```
+
+*Fuente: GEIH 2025 (DANE), enero a diciembre, Medellín y su área metropolitana;
+cálculos propios con `codigo/04_h2_geih.R`. Porcentajes ponderados; entre
+paréntesis, el conteo de la muestra. Ingreso en pesos de 2025.*
+
+**La GEIH confirma la dirección de H2.** El 53,0 % de los jefes ocupantes en la
+fuerza laboral está desempleado o es informal (22 de 43), frente al 39,7 % de los
+arrendatarios (1.795 de 4.343), otra vez por la informalidad (52,0 %, 21 de 42,
+frente a 37,1 %, 1.600 de 4.148). El ingreso laboral mediano de los jefes
+ocupados también es menor entre los ocupantes (1.400.000 frente a 1.624.000
+pesos). Los niveles de las dos encuestas no son comparables, porque miden el
+empleo de forma distinta; lo que coincide es la diferencia entre grupos.
+
+![Hogares que ocupan su vivienda sin título por comuna y corregimiento de Medellín, todos los estratos. Fuente: ECV 2025, cálculos propios con `codigo/05_grafica_comunas.R`.](figuras/ocupantes_por_comuna.png){#fig-comunas height="3.6in"}
+
+**El fenómeno está repartido por la ciudad.** La @fig-comunas muestra que la
+ocupación sin título no se limita a las comunas de ladera donde se formaron los
+barrios de invasión: el porcentaje más alto está en La Candelaria, el centro
+(2,7 %, 7 de 263 hogares), y comunas como Popular (1,6 %, 6 de 371) y San Javier
+(1,5 %, 7 de 462) quedan en niveles parecidos a Buenos Aires (1,6 %, 7 de 449).
+Con 0 a 7 hogares ocupantes por comuna, las diferencias entre comunas son poco
+precisas.
+
+# Implicación de política
+
+Frente al árbol de decisión de la sección 1, se cumple H2 y no H1, lo que apunta a un problema principalmente de ingresos
+laborales: los hogares que ocupan sin título no se distinguen por haber llegado
+desplazados, sino porque sus jefes trabajan más en la informalidad. Una política
+centrada solo en atender el desplazamiento o en legalizar los predios dejaría
+intacta la restricción que impide arrendar o comprar, un ingreso estable y
+demostrable. El instrumento que señala el resultado es la inclusión laboral y la
+formalización de los jefes de hogar de estratos 1 a 3.
+
+Quien decidiría distinto si este resultado se confirma es, primero, la
+Secretaría de Desarrollo Económico de Medellín, cuya oferta de empleo y
+emprendimiento se concentra en los Centros de Emprendimiento y Empleo y podría
+focalizarse en los hogares ocupantes, que, según la @fig-comunas, están en toda la
+ciudad y no solo en la periferia. Segundo, el Instituto Social de Vivienda y
+Hábitat de Medellín (ISVIMED). Su subsidio de vivienda nueva exige ingresos del
+hogar de hasta 4 SMMLV, un aporte propio en ahorro programado o cesantías
+inmovilizadas, seis años o más viviendo en Medellín y no ser propietario ni
+poseedor de vivienda [@isvimed2023]. El tope de ingreso no excluye a los
+ocupantes, que gastan menos que los arrendatarios; los otros requisitos sí
+pueden hacerlo: las cesantías solo las acumula quien trabaja con contrato, que es
+lo que les falta a la mayoría de estos jefes, y un ocupante de hecho podría
+contar como poseedor. La titulación de predios, por su parte, exige al menos
+diez años de ocupación continua [@isvimed2023], así que tampoco llega a las
+ocupaciones recientes.
+
+Para que un resultado basado en 74 hogares sirva para tomar esas decisiones
+haría falta repetir la comparación con varios años de la ECV y contar con una
+medida de ingreso del hogar que permita separar el papel del ingreso del de la
+informalidad.
+
+# Referencias {.unnumbered}
+
+\begingroup\setstretch{1.0}\setlength{\parskip}{6pt}
+
+::: {#refs}
+:::
+
+\endgroup

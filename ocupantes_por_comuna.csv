@@ -1,0 +1,22 @@
+codigo,nombre,tipo,hogares_muestra,ocupantes_muestra,ocupantes_estimados,pct_ocupantes
+10,La Candelaria,Comuna,263,7,1053,2.66
+70,Altavista,Corregimiento,128,3,415,2.34
+90,Santa Elena,Corregimiento,92,2,272,2.17
+5,Castilla,Comuna,307,6,903,1.95
+15,Guayabal,Comuna,170,3,431,1.76
+12,La América,Comuna,246,4,607,1.63
+1,Popular,Comuna,371,6,911,1.62
+9,Buenos Aires,Comuna,449,7,1071,1.56
+13,San Javier,Comuna,462,7,1055,1.52
+6,Doce de Octubre,Comuna,420,6,903,1.43
+2,Santa Cruz,Comuna,285,4,620,1.4
+3,Manrique,Comuna,455,6,907,1.32
+8,Villa Hermosa,Comuna,459,6,918,1.31
+60,San Cristóbal,Corregimiento,388,5,753,1.29
+11,Laureles-Estadio,Comuna,295,3,443,1.02
+7,Robledo,Comuna,533,5,756,0.94
+14,El Poblado,Comuna,329,3,444,0.91
+16,Belén,Comuna,568,5,756,0.88
+80,San Antonio de Prado,Corregimiento,300,2,299,0.67
+4,Aranjuez,Comuna,378,2,299,0.53
+50,Palmitas,Corregimiento,57,0,0,0

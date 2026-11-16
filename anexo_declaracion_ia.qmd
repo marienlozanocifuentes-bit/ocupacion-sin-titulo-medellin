@@ -1,0 +1,84 @@
+---
+title: "Anexo. Declaración de uso de inteligencia artificial"
+subtitle: "¿Desplazamiento o informalidad laboral? Qué distingue a los hogares que ocupan su vivienda sin título de los que la arriendan en Medellín · Grupo 2"
+author:
+  - Sofia Cambas
+  - Marien Lozano
+  - Samuel Rodríguez
+date: today
+date-format: "D [de] MMMM [de] YYYY"
+lang: es
+bibliography: referencias.bib
+csl: apa.csl
+format:
+  pdf:
+    documentclass: article
+    papersize: letter
+    fontsize: 12pt
+    linestretch: 1.5
+    geometry: margin=2.54cm
+    colorlinks: true
+---
+
+**Herramienta y fecha.** Usamos Claude (Anthropic), en la aplicación de Claude,
+entre el 21 de agosto y el 4 de noviembre de 2026, en el nivel **Colaboración**
+de la escala AIAS [@perkins2024]. La pregunta, la elección del grupo de
+comparación, de los estratos y de las encuestas, y la lectura de los resultados
+son decisiones del grupo.
+
+**Por sección.** En la sección 1 le pedimos reescribir nuestro planteamiento
+inicial a partir de la información que le dimos («te voy a empezar pidiendo una
+reescritura de ese planteamiento precario que teníamos»); no le pedimos escoger
+la pregunta: entre las dos opciones de comparación que propuso, elegimos la de
+arrendatarios. En la sección 2 le entregamos las seis fuentes que encontramos en
+Scopus («aquí hay 6») y le pedimos ubicarlas por tema y redactar la revisión. En
+la sección 3 le pedimos identificar en el diccionario de datos las variables
+útiles de la ECV y de la GEIH y redactar la metodología («continuemos con los
+datos y metodología»). En la sección 4, en el código, le pedimos organizar los
+doce meses de la GEIH «y sacar solo lo necesario de cada mes solo para la ciudad
+de Medellín», pasar la limpieza de la ECV a R y calcular los resultados («arranca
+con los 3 en ese orden»); la herramienta escribió los scripts de
+`codigo/` y la primera versión de los párrafos de resultados. En la sección 5
+le pedimos un primer borrador a partir del árbol de decisión de la sección 1 y
+del resultado de la sección 4. En la versión final le pedimos acortar el
+documento a diez páginas, quitando rodeos en los datos y repeticiones en los
+resultados, y preparar los datos y la gráfica por comuna de la sección 4
+(`codigo/05_grafica_comunas.R`).
+
+**Lo que devolvió y no usamos.** Propuso comparar a los ocupantes con hogares no
+desplazados y no lo usamos, porque perdía la decisión entre ocupar y arrendar.
+Propuso como marco teórico un artículo de Brueckner y Selod (2009) y lo quitamos
+porque no lo encontramos en Scopus. Sugirió otras fuentes candidatas (Ibáñez,
+Galiani y Field, entre otras) que no usamos, y propuso comparar solo estratos 1
+y 2, que cambiamos por 1 a 3 para tener más hogares ocupantes.
+
+**Dónde se equivocó.** Al planear la sección 3 proyectó cerca de 190 hogares
+ocupantes en la GEIH a partir de un solo mes; lo vimos al procesar febrero, que tenía un
+solo hogar ocupante, y el año completo dio 64. En el código definió al principio
+como desempleado a todo jefe sin trabajo, aunque no buscara empleo; se corrigió
+agregando la pregunta H.43 al comparar el código con la definición de la
+sección 3. En la sección 2 escribió una clave de cita que no
+existía en el archivo de referencias; lo vimos al revisar las claves de cita
+antes de compilar. En la sección 5 afirmó que los subsidios del ISVIMED podían
+exigir ingresos formales y que los hogares ocupantes tenían ingresos parecidos a
+los de los arrendatarios; lo primero no aparece en los requisitos oficiales y lo
+segundo contradice la sección 4. Lo vimos al revisar la página de la Alcaldía y
+reescribimos el párrafo con los requisitos publicados. En la sección 4 dejó dos
+pares de porcentajes sin su conteo, que agregamos al revisar el texto.
+
+**Lo que verificamos a mano.** El 74 y el 2.565 los comprobó Samuel Rodríguez
+corriendo `codigo/01_filtro_ecv.R` en su computador el 29 de octubre de 2026;
+las referencias, abriendo cada DOI o URL el 29 de octubre de 2026, por Marien Lozano. La tabla de
+frecuencias de J.36 la revisamos contra las preguntas de pago del cuestionario.
+Las funciones del ISVIMED y de la Secretaría de Desarrollo Económico que se
+mencionan en la sección 5 las comprobó Marien Lozano en las páginas oficiales
+de la Alcaldía de Medellín el 29 de octubre de 2026.
+
+**Quién leyó el texto final.** Sofia Cambas leyó el documento completo antes de
+subirlo, el 16 de noviembre de 2026.
+
+
+# Referencias {.unnumbered}
+
+::: {#refs}
+:::
